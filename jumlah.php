@@ -7,7 +7,6 @@
  
     $result = $conn->prepare('SELECT ID, Nama, Alamat, Jabatan FROM users');
     $result->execute();
-    $result->bind_result($ID, $Nama, $Alamat, $Jabatan);
     echo $result->num_rows;
  
     $conn->close();
